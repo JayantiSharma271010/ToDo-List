@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #b7537c;
+}
+
+.header::after {
+  display: table;
+  clear: both;
+}
+
+input {
+  float: left;
+  border: 0;
+}
+
+.addbtn {
+  float: left;
+  background: #f17478;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.addbtn:hover {
+  background: #f4c195;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 15px 8px 15px 45px;
+  list-style: none;
+  background: #fffaf2;
+  color: #2e0e07;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+ul li:nth-child(odd) {
+  background: #f8efd7;
+}
+ul li:not(.checked):hover {
+  background: #ffacdf;
+}
+
+ul li.checked {
+  background: #a68f00;
+  color: #fffbf4;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 20px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+ul li.checked:hover {
+  background: #0c6389;
+}
+
+.close {
+  padding: 5px 12px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  transition: 0.2s ease;
+}
+.close:hover {
+  color: whitesmoke;
+  background: #ff0033;
+}/*# sourceMappingURL=style.css.map */
